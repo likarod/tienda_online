@@ -6,7 +6,7 @@ export default class Menu extends Component {
             <div>
                 <ul>
                  <li>
-                 Hola
+                 Inicio
                  </li>
                 </ul>
             </div>

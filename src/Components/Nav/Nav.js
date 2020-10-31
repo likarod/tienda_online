@@ -29,7 +29,7 @@ class Nav extends Component {
                 <div className="div_items">
                   <li>
                     <Link to="/resumen" className="link">
-                      <box-icon name='cart-alt' size="sm"></box-icon>
+                      <box-icon name='cart-alt' size="sm">Hola</box-icon>
                     </Link>
                   </li> 
                 </div>
