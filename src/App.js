@@ -2,7 +2,7 @@ import { BrowserRouter, Switch } from 'react-router-dom';
 
 // Componentes
 import Nav from './Components/Nav/Nav'
-import Main from './Components/Main/Main'
+import Rutas from './Components/Rutas/Rutas'
 //CSS
 import './App.css';
 
@@ -17,7 +17,7 @@ function App() {
       </header>
       <main>
         <Switch>
-         <Main/>
+         <Rutas/>
         </Switch>
       </main>
     </BrowserRouter>
