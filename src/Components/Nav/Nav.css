@@ -1,0 +1,53 @@
+/*
+ ------- Nav css File
+*/
+
+
+    div.App-header { 
+        display: flex;
+        justify-content: space-between;
+        font-size: calc(10px + 2vmin);   
+        height: 45px;
+        justify-content: baseline;
+        background-color: transparent;
+    }
+        div.header_menu_drch{
+            display: flex;
+            align-items: self-start;
+        }
+
+        div.header_menu_izq{
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 10px
+           
+        }
+            .div_items, .dropdown{
+                margin:3px 0px;
+                justify-content: baseline;
+            }
+
+            .Lista_nav{    
+                display: flex;
+                flex-direction: row;
+                list-style-type: none; 
+                
+            }
+
+                li{
+                    transition: hover 0.2s linear;
+                    cursor: pointer;
+                    padding-left: 5px;
+                    padding-top: 3px;
+                }
+
+                a{
+                    display: flex;
+                    align-items: baseline;
+                }
+                
+                .div_items:hover,
+                li:hover > a box-icon {
+                    color: #fff;
+                    text-decoration-line: none; 
+                }
