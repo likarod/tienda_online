@@ -1,0 +1,9 @@
+.fondo{
+    position: relative;
+    margin-top: -170px;
+    min-height: 990px;
+    background-image: url('../../imagenesPrueba/modelo3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+

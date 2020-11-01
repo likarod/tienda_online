@@ -2,14 +2,17 @@ import React, { Component } from 'react'
 
 //Componentes
 import Buscador from '../Buscador/Buscador'
-import Ofertas from '../Ofertas/Ofertas'
+import Novedades from '../Novedades/Novedades'
+
+//CSS
+import './Inicio.css'
 
 export default class Inicio extends Component {
     render() {
         return (
-            <div>
+            <div className="fondo">
                 <Buscador/>
-                <Ofertas/>
+                <Novedades/>
             </div>
         )
     }
