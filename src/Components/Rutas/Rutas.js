@@ -10,6 +10,7 @@ export default class Rutas extends Component {
             <section>
                 <Switch>
                   <Route exact path="/" component={Inicio}/>
+                  
                 </Switch>
             </section>
         )
