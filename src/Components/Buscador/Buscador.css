@@ -1,22 +1,20 @@
 .containerPrincipal{
     height: 580px;
-    background-image: url('');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: image('/images/revistas.jpg');
 }
 
     form.formularioBuscador{
         padding-top: 8%;
-        flex: 1, 1, 0%;
-        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
         height: 44px;
     }
 
     div.divBuscador{
         display:flex;
         flex-direction: row;
-        justify-content: center;
-        width: 90%;
+        align-items: center;
         height: 100%;
     }
 
@@ -39,40 +37,24 @@
         .caja_buscador{
             -webkit-box-pack: center ;
             -webkit-box-align: center ;
-            padding-left: 16px ;
-            padding-right: 16px ;
-            display: flex ;
-            align-items: center ;
+            display: flex ;  
+            flex-direction: row;        
             justify-content: center ;
-            width: 100%;
+            align-items: center ;
+            width: 400%;
         } 
 
-            .boton_buscador{
-                cursor: pointer ;
-                position: relative ;
-                touch-action: manipulation ;
-                font-family: inherit ;
-                font-size: inherit ;
-                line-height: inherit ;
-                font-weight: inherit ;
-                border-radius: 0px ;
-                outline: none ;
-                transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s ;
-                background: transparent ;
-                border: none ;
-                color: inherit ;
-                display: block ;
-                margin: 0px ;
-                padding: 0px ;
-                text-align: inherit ;
-                text-decoration: none ;
-                height: 100% ;
-            }
+        .div_caja_buscador{
+            display: flex;
+            flex-direction: row;
+            width: 400px;
+        }
 
             input.input_buscador{
+                display: flex;
                 font-size:17px;
                 line-height: 20px;
-                font-weight: 400;
+                font-weight: 300;
                 background: none;
                 border-top: 0px;
                 border-right: 0px;
@@ -80,11 +62,17 @@
                 border-bottom: 2px solid black;
                 color: rgb(34, 34, 34) ;
                 margin:0px ;
-                padding:15px;
+                padding:11px;
                 width: 100%;
                 text-overflow: ellipsis;
             }
 
                 .input_buscador:focus-visible{
                     outline: none;
+                }
+
+                .bnt_buscador{
+                    display:flex;
+                    flex-direction: row;
+                    align-items: flex-end;
                 }

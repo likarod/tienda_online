@@ -1,19 +1,22 @@
 import React, { Component } from 'react'
 
+//CSS
+import './Menu.css'
+
 export default class Menu extends Component {
     render() {
         return (
             <div>
                 <ul>
-                 <li>
-                  Inicio
-                 </li>
-                 <li>
-                  Sobre nosotros
-                 </li>
-                 <li>
-                  Contacto
-                 </li>
+                    <li>
+                        Inicio
+                    </li>
+                    <li>
+                        Sobre nosotros
+                    </li>
+                    <li>
+                        Contacto
+                    </li>
                 </ul>
             </div>
         )

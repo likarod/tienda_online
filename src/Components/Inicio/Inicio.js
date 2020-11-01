@@ -7,10 +7,10 @@ import Ofertas from '../Ofertas/Ofertas'
 export default class Inicio extends Component {
     render() {
         return (
-            <article>
+            <div>
                 <Buscador/>
                 <Ofertas/>
-            </article>
+            </div>
         )
     }
 }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 
-import Menu from '../Menu/Menu'
+
 import './Nav.css';
 
 
@@ -17,20 +17,22 @@ class Nav extends Component {
   render() {
     return (
       <div className="App-header">
-        <div className="header_menu_drch">
-          <ul className="Lista_nav">
-            <li><box-icon  size="md" name='menu-alt-left'></box-icon><Menu/></li>
-          </ul>
+        <div className="header_menu_drch"> 
+            <ul className="Lista_nav">
+              <box-icon  size="md" name='menu-alt-left' animation='fade-right-hover' color="white"></box-icon>
+              {/* <li className="menu">Inicio</li>
+              <li className="menu">Sobre nosotros</li>
+              <li className="menu">Contacto</li>	   */}
+            </ul>
+            <img src="/images/YugaFinal.png" alt="logoYuga" className="imagenLogo"/>
         </div>
         <div className="header_menu_izq">
           <ul className="Lista_nav">
-            <div className="div_items">
-              <li>
-                <Link to="/resumen" className="link">
-                  <box-icon type='solid' size="md" name='cart-alt'></box-icon>
-                </Link>
-              </li> 
-            </div>
+            <li>
+              <Link to="/resumen" className="link">
+                <box-icon type='solid' size="md" name='cart-alt' color="white"></box-icon>
+              </Link>
+            </li> 
           </ul>
         </div>
       </div>
