@@ -18,13 +18,15 @@ class Nav extends Component {
     return (
       <div className="App-header">
         <div className="header_menu_drch"> 
-            <ul className="Lista_nav">
-              <box-icon  size="md" name='menu-alt-left' animation='fade-right-hover' color="white"></box-icon>
+          <ul className="Lista_nav">
+            <box-icon  size="md" name='menu-alt-left' animation='fade-right-hover' color="white"></box-icon>
               {/* <li className="menu">Inicio</li>
               <li className="menu">Sobre nosotros</li>
               <li className="menu">Contacto</li>	   */}
-            </ul>
+          </ul>
+          <Link to="/">
             <img src="/images/YugaFinal.png" alt="logoYuga" className="imagenLogo"/>
+          </Link>
         </div>
         <div className="header_menu_izq">
           <ul className="Lista_nav">

@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+div.divNovedades{  
+    margin-top: 25%;
+    min-height: 570px;    
+}
+
+.novedades{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100px;
+    background-color: black;
+}
+
+    h1.tituloNovedad{
+        display:flex;
+        align-items: center;
+        font-family: 'Lato', sans-serif, sans-serif;
+        font-style: inherit;
+        font-size: 55px;
+        font-weight: 700;
+        color: white;
+        line-height: 15px;
+    }
+    div.carousel{
+        background-color: #f0f3f4;
+    }
+    /* #e6d690 */
+    img.imagenCarousel{
+        height: 790px;
+    }
