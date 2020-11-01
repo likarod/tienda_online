@@ -6,7 +6,7 @@
   ## 🛠🛠 Tecnologías
   
 - El front se realizó con la librería de REACTJS🌌 [Create React App](https://github.com/facebook/create-react-app).
-- El [backend](https://github.com/Likaro-nav/sturdy-fortnight) se realizó con NodeJS + Express integrado con BBDD SQL🛢
+- Haz click en el siguiente enlace, 📲 [backend](https://github.com/Likaro-nav/sturdy-fortnight) para conocer toda la magia que se mueve detrás. 
 
 ## Script disponible
 
