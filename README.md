@@ -17,4 +17,4 @@
 Ejecuta la aplicación en modo de desarrollo. \
 Abra [http: // localhost: 3000] (http: // localhost: 3000) para verlo en el navegador.
 
-Descargate el repositorio y navega en él.✌
+Clone este repositorio y navegue en YUHGA.✌
