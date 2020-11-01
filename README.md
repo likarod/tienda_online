@@ -6,7 +6,7 @@
   ## 🛠🛠 Tecnologías
   
 - El front se realizó con la librería de REACTJS🌌 [Create React App](https://github.com/facebook/create-react-app).
-- El backend se realizó con NodeJS + Express integrado con BBDD SQL🛢
+- El [backend] (https://github.com/Likaro-nav/sturdy-fortnight) se realizó con NodeJS + Express integrado con BBDD SQL🛢
 
 ## Script disponible
 
@@ -17,4 +17,4 @@
 Ejecuta la aplicación en modo de desarrollo. \
 Abra [http: // localhost: 3000] (http: // localhost: 3000) para verlo en el navegador.
 
-Clone este repositorio y navegue en YUHGA.✌
+Clone este repositorio y navegue en YUGA.✌
