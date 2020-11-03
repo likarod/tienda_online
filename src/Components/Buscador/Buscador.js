@@ -37,7 +37,6 @@ export default class Buscador extends Component {
                                             </box-icon>
                                         </Link>
                                     </div>
-                                    
                                 </div> 
                             </label>
                         </div>   

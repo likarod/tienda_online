@@ -12,7 +12,7 @@ export default class Rutas extends Component {
             <section>
                 <Switch>
                   <Route exact path="/" component={Inicio}/>
-                  <Route exact path="/articulos" component={Contenido}/>
+                  <Route exact path="/articulos/:query" component={Contenido}/>
                   <Route exact path="/resumen" component={Detalles}/>
                 </Switch>
             </section>
