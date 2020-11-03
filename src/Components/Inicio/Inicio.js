@@ -8,9 +8,14 @@ import Novedades from '../Novedades/Novedades'
 import './Inicio.css'
 
 export default class Inicio extends Component {
+    constructor(props) {
+        super(props);
+        this.wrapper = React.createRef();
+    }
+    
     render() {
         return (
-            <div className="fondo">
+            <div ref={this.wrapper} className="fondo">
                 <Buscador/>
                 <Novedades/>
             </div>

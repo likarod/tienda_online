@@ -5,10 +5,11 @@ import Carousel from 'react-bootstrap/Carousel';
 import './Novedades.css'
 
 export default class Novedades extends Component {
+    
     render() {
         return (
             <article>
-                <div className="divNovedades">
+                <div  className="divNovedades">
                     <div className="novedades">
                         <h1 className="tituloNovedad">
                             NOVEDADES

@@ -8,12 +8,13 @@ export default class Buscador extends Component {
     constructor(props){
         super(props);
         this.state = {
-            input: ""
+            input: "",
         }
     }
 
     buscarProducto = (e) => {
         this.setState({input: e.target.value})
+        console.log(this.state.input)
     }
 
     render() {
@@ -29,13 +30,14 @@ export default class Buscador extends Component {
                                        <input className="input_buscador" aria-autocomplete="list" autoComplete="off" autoCorrect="off" spellCheck="false" id="bigsearch" name="buscador" required="" onChange={this.buscarProducto}>
                                         </input> 
                                     </div>
-                                    <Link to={"/articulos/" + this.state.input} >
-                                        <div className="btn_buscador">
+                                    
+                                    <div className="btn_buscador">
+                                        <Link to={"/articulos/" + this.state.input} >
                                             <box-icon name='search' size="sm" className="btn_buscador"> 
-                                                <input type="submit" value="Submit" className="submit"/>
                                             </box-icon>
-                                        </div>
-                                    </Link>
+                                        </Link>
+                                    </div>
+                                    
                                 </div> 
                             </label>
                         </div>   
