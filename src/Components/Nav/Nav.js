@@ -27,6 +27,9 @@ class Nav extends Component {
           <Link to="/">
             <img src="/images/YugaFinal.png" alt="logoYuga" className="imagenLogo"/>
           </Link>
+          <Link to="/novedades" className="link">
+            <p className="linkNav">MODA</p>
+          </Link>
         </div>
         <div className="header_menu_izq">
           <ul className="Lista_nav">

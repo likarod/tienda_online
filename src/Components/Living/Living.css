@@ -2,31 +2,45 @@
 
 div.divNovedades{  
     margin-top: 25%;
-    min-height: 570px;    
+    min-height: 570px;
+    background-color: #f0f3f4; 
 }
 
+.line{
+    display: flex;
+    width:435px;
+    height: 10px;
+    background-color: rgb(184, 3, 3);
+}
 .novedades{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     height: 100px;
-    background-color: black;
+    
 }
 
     h1.tituloNovedad{
         display:flex;
         align-items: center;
+        margin-right: 30px;
         font-family: 'Lato', sans-serif, sans-serif;
+        text-align: start;
         font-style: inherit;
-        font-size: 55px;
+        font-size: 140px;
         font-weight: 700;
-        color: white;
+        color: rgb(10, 9, 9);
         line-height: 15px;
     }
+    
     div.carousel{
-        background-color: #f0f3f4;
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
     }
     /* #e6d690 */
     img.imagenCarousel{
+        display: flex;
+        align-items: flex-end;
         height: 790px;
     }

@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 //Componentes
 import Buscador from '../Buscador/Buscador'
-import Novedades from '../Novedades/Novedades'
+import Living from '../Living/Living'
 
 //CSS
 import './Inicio.css'
@@ -17,7 +17,7 @@ export default class Inicio extends Component {
         return (
             <div ref={this.wrapper} className="fondo">
                 <Buscador/>
-                <Novedades/>
+                <Living/>
             </div>
         )
     }

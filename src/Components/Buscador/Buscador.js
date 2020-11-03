@@ -33,6 +33,7 @@ export default class Buscador extends Component {
                                     
                                     <div className="btn_buscador">
                                         <Link to={"/articulos/" + this.state.input} >
+                                            
                                             <box-icon name='search' size="sm" className="btn_buscador"> 
                                             </box-icon>
                                         </Link>
