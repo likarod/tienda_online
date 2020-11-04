@@ -1,5 +1,8 @@
 import React from 'react'
 
+//Contexto
+import CategoryConsumer from '../../categoryContext'
+
 class Dashboard extends React.Component {
     constructor(props) {
         super(props);
@@ -7,23 +10,42 @@ class Dashboard extends React.Component {
             nombre: this.props.datos.Name,
             precio: this.props.datos.Price,
             categoria: this.props.datos.NameCategory,
+            descripcion: this.props.datos.Description,
             imag: this.props.datos.Images
         }
     }
     render() {
         return (
-            <article>
-                {console.log(this.props.datos.Images)}
-                    <img src={this.state.imag} alt="Foto imagen"/>
-                    <link rel="stylesheet" href={this.state.imag}/>
-                    <p>{this.state.nombre}</p>
-                    <p>
-                        {this.state.precio}
-                    </p>
-                    <p>
-                        {this.state.categoria}
-                    </p>
-            </article>
+            <CategoryConsumer>
+                {(nuevo)=>(
+                <article>
+                    <div className="busquedaCategoria">
+                        <div className="imagen">
+                            <img src={this.state.imag} alt="Foto imagen"/>
+                        </div>
+                        <div className="nombre">
+                            <p>{this.state.nombre}</p>  
+                        </div>   
+                    
+                        <div className="precio">
+                            <h5>
+                                {this.state.precio}
+                            </h5>
+                        </div>
+                        <div className="categoria">
+                            <p>
+                                {this.state.categoria}
+                            </p>
+                        </div>
+                        <div className="descripcionPrincipal">
+                            <p>
+                                {this.state.descripcion}
+                            </p>
+                        </div>
+                    </div> 
+                </article>
+                )}
+            </CategoryConsumer>
         )
     }
 }
