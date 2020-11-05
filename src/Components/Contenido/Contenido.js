@@ -25,7 +25,7 @@ class Contenido extends React.Component {
         return (
             <div>
                 <h4>RESULTADOS DE BÚSQUEDA "{this.state.params.toUpperCase()}"</h4>
-                {this.state.resultados.map((nuevo, i)=><Dashboard datos={nuevo} key={i} />)}
+                {this.state.resultados.map((nuevo, i)=><Dashboard datos={nuevo} key={i} parametro={this.state.params}/>)}
             </div>
         )
     }

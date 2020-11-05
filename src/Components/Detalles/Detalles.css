@@ -1,0 +1,26 @@
+.infoProducto{
+    border: black
+}
+
+h5.nombreProducto{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "GT Walsheim Pro";
+    letter-spacing: 4px;
+    margin: 16px;
+    color: red;
+}
+
+span.precioProducto, span.cantidad{
+    font-weight: 600;
+}
+
+.infoDescripcion{
+    display: flex;
+    justify-content: center;
+    width: 200px;
+}
+/* .descripcionProducto{
+
+    
+} */

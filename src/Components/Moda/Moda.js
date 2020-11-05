@@ -7,9 +7,9 @@ import CheckBox from '../Filtros/CheckBox'
 //Contexto
 import CategoryConsumer from '../../categoryContext'
 
-
+//CSS
 import './Moda.css'
-// import { CardImg } from 'react-bootstrap';
+
 
 class Moda extends React.Component{
     constructor(props) {
@@ -69,12 +69,15 @@ class Moda extends React.Component{
             <CategoryConsumer>
             {(producto) => (
                 <article>
-                    <h3>Ultimas tendencias</h3>
+                    <div className="divTenden">
+                       <h3 className="tituloTendencias">Ultimas tendencias</h3> 
+                    </div>
                     {/* Componente de filtrado.
                     Se envía por props el state moda para que pueda realizarse el proceso de filtrado*/}
                     <CheckBox 
                         datos={this.state.moda}
                         manejoFiltros={(filtros)=>this.manejoFiltros(filtros, "categoria")}
+                        className="filtros"
                     />
                     {/* Con el .map se recorre el array de JSON que viene directamente desde la BD. Después se renderizan según los productos. */}
                     {this.state.moda.map((tendencias, index)=>    
@@ -95,8 +98,7 @@ class Moda extends React.Component{
                                 </div>
                             </div>
                         <div className="btnProductos">
-                            <Link to="/resumen">
-                                	
+                            <Link to="/resumen">   	
                                 <button className="agregar"onClick={()=> producto.metodo(tendencias)}>
                                     <img src="/images/bxs-shopping-bags.svg" alt="shopping cart"/>
                                 </button>
@@ -107,7 +109,7 @@ class Moda extends React.Component{
                         
                     </div> ).slice([this.state.inicial], [this.state.limit])}
                     <div className="btnChance" onClick={this.masArticulos}>
-                        <button className="btnCambio">
+                        <button className="btnC">
                             Visualizar más
                         </button>
                     </div>

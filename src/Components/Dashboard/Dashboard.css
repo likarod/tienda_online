@@ -1,0 +1,25 @@
+div.busquedaCategoria{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 70px;
+}
+
+button.btnInfo{
+    background: none;
+    outline: none;
+    padding: 7px; 
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: red;
+    margin-bottom: 25px;            
+    font-family: "GT Walsheim Pro";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18.3714px;
+    line-height: 15px;
+    color: black;
+    letter-spacing: 3px;
+
+}
