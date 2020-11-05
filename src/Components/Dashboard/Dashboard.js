@@ -22,6 +22,7 @@ class Dashboard extends React.Component {
                     <div className="busquedaCategoria">
                         <div className="imagen">
                             <img src={this.state.imag} alt="Foto imagen"/>
+                            {console.log(this.state.imag)}
                         </div>
                         <div className="nombre">
                             <p>{this.state.nombre}</p>  
@@ -30,6 +31,7 @@ class Dashboard extends React.Component {
                         <div className="precio">
                             <h5>
                                 {this.state.precio}
+                                EUR
                             </h5>
                         </div>
                         <div className="categoria">

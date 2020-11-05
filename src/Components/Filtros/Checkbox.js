@@ -42,7 +42,7 @@ function CheckBox(props) {
                 {props.datos.map((value, index) => (
                     <React.Fragment key={index}>
                         <Checkbox
-                            onChange={()=> manejoClick(value.ProductID)}
+                            onChange={()=> manejoClick(value.CategoryID)}
                             type='checkbox'
                             // Si el checked está en false, ninguno de los elementos se de la lista de filtros se activa. A través del hooks de cambio verificaremos que se active o no y se modifique el estado de "cambio".
                             checked={cambio.indexOf(value.ProductID) === -1 ? false : true }

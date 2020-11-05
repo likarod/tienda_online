@@ -19,7 +19,9 @@ class Moda extends React.Component{
             filtros: {
                 categoria: [],
                 precio: []
-            }
+            },
+            inicial: 0,
+            limit: 10,
         }
 
         this.manejoFiltros = this.manejoFiltros.bind(this)
@@ -28,12 +30,14 @@ class Moda extends React.Component{
     componentDidMount(){
         fetch('http://localhost:5000/novedades')
         .then(response=> response.json())
-        .then(res=>this.setState({moda:res}))
+        .then(res=> {
+            this.setState({
+                moda:res
+            })
+        })
     }
 
   
-
-
 
     componentDidUpdate(prevProps, prevState) {
         if(prevState.filtro !== this.state.filtros) {
@@ -42,9 +46,12 @@ class Moda extends React.Component{
        
     } 
 
-
-    manejoPrecio = (valor) => {
-       console.log(valor)
+    masArticulos = () => {
+        let count = 10
+        console.log('PRESIONADO')
+        this.setState({
+            [this.state.limit]: count
+        })
     }
 
     manejoFiltros = (filtros, categoria) =>{
@@ -76,7 +83,6 @@ class Moda extends React.Component{
                         
                         <div className="nombre">
                             <p className="nombreProductos">
-                                {console.log(tendencias)}
                                 {tendencias.Name} 
                             </p>
                         </div>
@@ -90,15 +96,21 @@ class Moda extends React.Component{
                             </div>
                         <div className="btnProductos">
                             <Link to="/resumen">
-                                <img src="/images/bxs-shopping-bags.svg" alt="shopping cart"/>	
+                                	
                                 <button className="agregar"onClick={()=> producto.metodo(tendencias)}>
-                                    AÑADIR	
+                                    <img src="/images/bxs-shopping-bags.svg" alt="shopping cart"/>
                                 </button>
                             </Link> 
                             </div>  
                         </div>
                         <hr/>
-                    </div> )}
+                        
+                    </div> ).slice([this.state.inicial], [this.state.limit])}
+                    <div className="btnChance" onClick={this.masArticulos}>
+                        <button className="btnCambio">
+                            Visualizar más
+                        </button>
+                    </div>
                 </article>
             )}
             </CategoryConsumer>
